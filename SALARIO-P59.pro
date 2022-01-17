@@ -34,4 +34,4 @@ RESOURCES += \
     Resources.qrc
 
 DISTFILES += \
-    class_diagram.qmodel
+    Diagrama de clases.qmodel

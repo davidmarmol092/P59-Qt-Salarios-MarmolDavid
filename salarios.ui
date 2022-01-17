@@ -14,7 +14,7 @@
    <string>Salarios</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="Resources.qrc">
+   <iconset>
     <normaloff>:/Recursos/gestion-de-proyectos.png</normaloff>:/Recursos/gestion-de-proyectos.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -233,6 +233,9 @@
          <property name="readOnly">
           <bool>true</bool>
          </property>
+         <property name="plainText">
+          <string>Aqui podra ver los resultados del cáculo..........</string>
+         </property>
          <property name="placeholderText">
           <string>Aqui se mostraran los resultados del calculo</string>
          </property>
@@ -277,18 +280,29 @@
              </property>
              <item row="0" column="0">
               <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="text">
-                <string>Total:</string>
+                <string>TOTAL:</string>
                </property>
               </widget>
              </item>
              <item row="1" column="0">
               <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="statusTip">
                 <string>Salario Bruto</string>
                </property>
                <property name="text">
-                <string>Salario Bruto</string>
+                <string>Salario Bruto:</string>
                </property>
               </widget>
              </item>
@@ -303,6 +317,9 @@
                <property name="statusTip">
                 <string>Valor Bruto de Salarios</string>
                </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 0);</string>
+               </property>
                <property name="text">
                 <string>0</string>
                </property>
@@ -316,11 +333,17 @@
              </item>
              <item row="2" column="0">
               <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="statusTip">
                 <string>Valor IESS</string>
                </property>
                <property name="text">
-                <string>IESS</string>
+                <string>IESS:</string>
                </property>
               </widget>
              </item>
@@ -335,6 +358,9 @@
                <property name="statusTip">
                 <string>Valor de Descuento</string>
                </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 255, 127);</string>
+               </property>
                <property name="text">
                 <string>0</string>
                </property>
@@ -348,11 +374,14 @@
              </item>
              <item row="3" column="0">
               <widget class="QLabel" name="label_7">
-               <property name="statusTip">
-                <string>Valor Salario Neto</string>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
                </property>
                <property name="text">
-                <string>Salario Neto</string>
+                <string>Salario Neto:</string>
                </property>
               </widget>
              </item>
@@ -366,6 +395,9 @@
                </property>
                <property name="statusTip">
                 <string>Valro de Salario Neto</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(212, 144, 255);</string>
                </property>
                <property name="text">
                 <string>0</string>
@@ -395,7 +427,7 @@
      <x>0</x>
      <y>0</y>
      <width>823</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -470,8 +502,6 @@
    </property>
   </action>
  </widget>
- <resources>
-  <include location="Resources.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

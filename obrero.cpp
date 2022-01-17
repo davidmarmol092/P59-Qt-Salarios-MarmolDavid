@@ -85,7 +85,7 @@ QString Obrero::toString()
     str.append("Salario Neto: "+ QString::number(m_salarioNeto)+"\n");
     return str;
 }
-
+//
 QString Obrero::jornada2String()
 {
     switch (m_jornada) {
