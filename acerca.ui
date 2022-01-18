@@ -6,18 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>326</height>
+    <width>533</width>
+    <height>272</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Acerca de Salarios</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(185, 255, 249);</string>
+  </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>290</y>
+     <x>60</x>
+     <y>230</y>
      <width>461</width>
      <height>32</height>
     </rect>
@@ -32,7 +35,7 @@
   <widget class="QLabel" name="lblNombre">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>10</y>
      <width>211</width>
      <height>71</height>
@@ -53,9 +56,9 @@
   <widget class="QLabel" name="lblDerechos">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>80</y>
-     <width>271</width>
+     <x>10</x>
+     <y>60</y>
+     <width>401</width>
      <height>71</height>
     </rect>
    </property>
@@ -65,7 +68,7 @@
     </font>
    </property>
    <property name="text">
-    <string>CopyRight  2022 Andrew Rueda. Universidad Politecnica Salesiana. All RIghts Reserved.</string>
+    <string>CopyRight  2022 David Mármol. Universidad Politecnica Salesiana. All RIghts Reserved.</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -74,14 +77,14 @@
   <widget class="QLabel" name="lblIcono">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>240</y>
+     <x>20</x>
+     <y>190</y>
      <width>431</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#000000;&quot;&gt;Iconos diseñados por &lt;/span&gt;&lt;a href=&quot;https://www.flaticon.es/autores/flat-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#000000;&quot;&gt;Flat Icons &lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-style:italic; color:#000000;&quot;&gt;from &lt;/span&gt;&lt;a href=&quot;www.flaticon.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;www.flaticon.es&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt; font-style:italic; color:#000000;&quot;&gt;Iconos diseñados e instertados por &lt;/span&gt;&lt;a href=&quot;https://www.flaticon.es/autores/flat-icons&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#000000;&quot;&gt;Flat Icons &lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:10pt; font-style:italic; color:#000000;&quot;&gt;from &lt;/span&gt;&lt;a href=&quot;www.flaticon.es&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#007af4;&quot;&gt;www.flaticon.es&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -90,42 +93,18 @@
   <widget class="QLabel" name="lblGitHub">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>160</y>
+     <x>20</x>
+     <y>150</y>
      <width>211</width>
      <height>17</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Codigo Disponible en &lt;a href=&quot;https://github.com/andrewrv43/P59-QT-Salarios.git&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;GitHub&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>80</y>
-     <width>121</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="Resources.qrc">:/Recursos/gestion-de-proyectos.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Codigo Disponible en: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>
- <resources>
-  <include location="Resources.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
