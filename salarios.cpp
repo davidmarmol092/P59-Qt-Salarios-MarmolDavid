@@ -25,9 +25,9 @@ void Salarios::limpiar()
 void Salarios::calcular()
 {
     if(ui->inNombre->text()==""){
-        ui->statusbar->showMessage("INGRESE UN NOMBRE VALIDO!",3500);
+        ui->statusbar->showMessage("INGRESE UN NOMBRE VALIDO PORFAVOR!",3500);
 
-        QMessageBox::warning(this,"NOMBRE","EL NOMBRE NO ES VALIDO");
+        QMessageBox::warning(this,"NOMBRE","EL NOMBRE ES INVALIDO");
         return;
     }
     else if((ui->inMatutina->isChecked()==false&&ui->inNocturna->isChecked()==false&&ui->inVespertina->isChecked()==false)){
@@ -118,7 +118,7 @@ void Salarios::guardar()
         ui->statusbar->showMessage("Datos almacenados en "+nombreArchivo,3500);
     }
     else{
-        QMessageBox::warning(this,"Advertencia!","Los datos no pudieron ser guardados");
+        QMessageBox::warning(this,"Error!","Los datos no pudieron ser guardados");
     }
     //cerrar el archivo
     archivo.close();

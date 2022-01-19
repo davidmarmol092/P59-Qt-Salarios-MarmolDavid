@@ -17,11 +17,9 @@ bool Controlador::agregarObrero(QString nombre, int horas, TipoJornada jornada)
 
 bool Controlador::calcularSalario()
 {
-    // Validar que el obrero no sea nulo
       if (m_obrero == nullptr)
           return false;
 
-      // Deternimar el valor hora
       double valorHora = 0;
       switch(m_obrero->jornada()){
       case TipoJornada::Vespertina:
@@ -36,20 +34,19 @@ bool Controlador::calcularSalario()
       default:
           return false;
       }
-      // Calculo de la horas extra
       int horas = m_obrero->horas();
       int horasExtra = 0;
       if (m_obrero->horas() > 40){
           horasExtra = m_obrero->horas() - 40;
           horas = 40;
       }
-      // Calculo del salario
+
       double salarioBruto = horas * valorHora + horasExtra * (HORA_EXTRA * valorHora / 100);
 
-      // Calculo del descuento
+
       double descuento = salarioBruto * IESS / 100;
 
-      // Calculo del salario neto (a recibir)
+      // Calculo del salario neto
       double salarioNeto = salarioBruto - descuento;
 
       // Establecer valores al objeto

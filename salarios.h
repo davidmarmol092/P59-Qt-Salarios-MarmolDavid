@@ -2,13 +2,19 @@
 #define SALARIOS_H
 
 #include <QMainWindow>
+
 #include "controlador.h"
+
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QDebug>
+
 #include <acerca.h>
+
 #define VERSION "1.0"
+
 QT_BEGIN_NAMESPACE
+
 namespace Ui { class Salarios; }
 QT_END_NAMESPACE
 
@@ -38,12 +44,11 @@ private slots:
 
     void on_actionAcerca_de_Salarios_triggered();
 
-
-
     void on_actionSalir_triggered();
 
 private:
     Ui::Salarios *ui;
     Controlador *m_controlador;
 };
+
 #endif // SALARIOS_H

@@ -16,5 +16,6 @@ Acerca::~Acerca()
 void Acerca::setVersion(const QString &newVersion)
 {
     m_version = newVersion;
-    this->ui->lblNombre->setText("Salarios "+m_version);
+
+    this->ui->lblNombre->setText("Salario "+m_version);
 }

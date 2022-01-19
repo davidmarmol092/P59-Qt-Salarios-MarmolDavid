@@ -19,6 +19,7 @@ public:
 
 private:
     Ui::Acerca *ui;
+
     QString m_version;
 };
 

@@ -10,6 +10,7 @@
 #define NOCTURNO 2.87
 #define HORA_EXTRA 50
 #define IESS 9.5
+
 class Controlador : public QObject
 {
     Q_OBJECT
