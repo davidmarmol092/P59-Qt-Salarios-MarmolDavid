@@ -16,15 +16,20 @@ class Controlador : public QObject
     Q_OBJECT
 public:
     explicit Controlador(QObject *parent = nullptr);
+
     bool agregarObrero(QString nombre, int horas, TipoJornada jornada);
     bool calcularSalario();
+
     Obrero *obrero() const;
+
     void setObrero(Obrero *newObrero);
+
     double m_totalBruto;
     double m_totalIESS;
     double m_totalNeto;
 
 signals:
+
 private:
    Obrero *m_obrero;
 
