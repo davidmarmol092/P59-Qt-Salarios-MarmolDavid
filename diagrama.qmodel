@@ -48,19 +48,191 @@
                           </DElement>
                          </base-DElement>
                          <object>{fd8ba680-9edb-4237-91fc-565c084cda6f}</object>
-                         <name>New Class</name>
-                         <pos>x:200;y:110</pos>
-                         <rect>x:-125;y:-85;w:250;h:170</rect>
+                         <name>Acerca</name>
+                         <pos>x:-165;y:-175</pos>
+                         <rect>x:-160;y:-85;w:320;h:170</rect>
                          <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                         </DObject>
                        </base-DObject>
+                       <show-all-members>true</show-all-members>
                       </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{41bfd140-08ba-416e-8c22-118373ea8c20}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{f192dd0b-2ef0-4c00-bb75-fc3d2a5078b3}</object>
+                         <name>Controlador</name>
+                         <pos>x:-525;y:-180</pos>
+                         <rect>x:-175;y:-105;w:350;h:210</rect>
+                         <auto-sized>false</auto-sized>
+                         <visual-role>0</visual-role>
+                         <stereotype-display>3</stereotype-display>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{86bcc5ea-3bd9-462e-a5c6-85f5052d8756}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{fc0e8e83-da18-4c47-87e8-30f92d0aaa91}</object>
+                         <name>Obrero</name>
+                         <pos>x:-525;y:165</pos>
+                         <rect>x:-165;y:-190;w:330;h:380</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{17054d12-edff-4775-a299-f4ae6dfea1bc}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{49601cbb-f5b4-44bf-9452-4a165d7d9178}</object>
+                         <name>Salarios</name>
+                         <pos>x:-185;y:120</pos>
+                         <rect>x:-145;y:-145;w:290;h:290</rect>
+                         <auto-sized>false</auto-sized>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{c1789f2f-3143-4c42-82bd-3d27463590f2}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{03d6023a-74d8-4866-83c1-498858ee2852}</object>
+                         <name>Class</name>
+                         <pos>x:30;y:-25</pos>
+                         <rect>x:-40;y:-35;w:80;h:70</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DDependency">
+                      <DDependency>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{4b20a171-7d86-436d-8e79-088d6e94edde}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{8967db0c-de47-4f4a-a5cd-e64dfd02df93}</object>
+                         <a>{c1789f2f-3143-4c42-82bd-3d27463590f2}</a>
+                         <b>{17054d12-edff-4775-a299-f4ae6dfea1bc}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DDependency>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{b5601d19-8c85-4d89-bdee-aa4a0415df3e}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{1795ab39-ca1f-4bc6-9aec-c126f2528680}</object>
+                         <a>{41bfd140-08ba-416e-8c22-118373ea8c20}</a>
+                         <b>{86bcc5ea-3bd9-462e-a5c6-85f5052d8756}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{64d17c1e-a72e-4758-b708-aaca90eed5f5}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{7664adc7-c10e-4c92-8f3a-5a7709ff2a03}</object>
+                         <a>{17054d12-edff-4775-a299-f4ae6dfea1bc}</a>
+                         <b>{41bfd140-08ba-416e-8c22-118373ea8c20}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <navigable>true</navigable>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DDependency">
+                      <DDependency>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{256d38b1-d758-49cf-b21a-d26e964acfab}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{fad9a6f1-da16-4f91-8086-2d0a4d1a593d}</object>
+                         <a>{17054d12-edff-4775-a299-f4ae6dfea1bc}</a>
+                         <b>{86bcc5ea-3bd9-462e-a5c6-85f5052d8756}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DDependency>
                      </instance>
                     </item>
                    </qlist>
                   </elements>
-                  <last-modified>1642611257673</last-modified>
+                  <last-modified>1642637962404</last-modified>
                   <toolbarid>General</toolbarid>
                  </MDiagram>
                 </base-MDiagram>
@@ -82,9 +254,65 @@
                     <uid>{fd8ba680-9edb-4237-91fc-565c084cda6f}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>New Class</name>
+                  <name>Acerca</name>
                  </MObject>
                 </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{3aeb1a8a-0075-4584-b5c1-dd4db4d37141}</uid>
+                    <type>1</type>
+                    <declaration>class Acerca : public QDialog</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{b0c73de5-c2ad-4e84-ae42-e24a269e027b}</uid>
+                    <type>2</type>
+                    <declaration>{     Q_OBJECT  public:     explicit Acerca(QWidget *parent = nullptr)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{3399adfb-530e-481e-8e0b-a4bd75155ca7}</uid>
+                    <type>2</type>
+                    <declaration>~Acerca()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{d347a35c-c4c4-45d9-a966-86e3b2807f10}</uid>
+                    <type>2</type>
+                    <declaration>void setVersion(const QString &amp;newVersion)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{617de818-7922-41c5-9517-7eb4c32b57fb}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>Ui::Acerca *ui</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{e6f497f9-0c06-4317-b0f5-9c0b478c2c1b}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>QString m_version</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{247dde04-8ff9-4bc6-a5ae-c52ff5d261b5}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>}</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
                </MClass>
               </instance>
              </target>
@@ -245,6 +473,733 @@
                  </MObject>
                 </base-MObject>
                </MPackage>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{32663276-bbf4-498e-8059-6feb7eaefbd6}</uid>
+             <target>
+              <instance type="MPackage">
+               <MPackage>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{32663276-bbf4-498e-8059-6feb7eaefbd6}</uid>
+                    <flags>1</flags>
+                   </MElement>
+                  </base-MElement>
+                  <name>Salarios-Obrero</name>
+                  <children>
+                   <handles>
+                    <handles>
+                     <qlist>
+                      <item>
+                       <handle>
+                        <uid>{035d9d00-28ab-4fd2-b9b1-755aab955656}</uid>
+                        <target>
+                         <instance type="MComponent">
+                          <MComponent>
+                           <base-MObject>
+                            <MObject>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{035d9d00-28ab-4fd2-b9b1-755aab955656}</uid>
+                               <flags>1</flags>
+                              </MElement>
+                             </base-MElement>
+                             <name>Obrero</name>
+                            </MObject>
+                           </base-MObject>
+                          </MComponent>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{f2038754-dc22-4087-82a4-c38d7c4b6d4f}</uid>
+                        <target>
+                         <instance type="MClass">
+                          <MClass>
+                           <base-MObject>
+                            <MObject>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{f2038754-dc22-4087-82a4-c38d7c4b6d4f}</uid>
+                               <flags>1</flags>
+                              </MElement>
+                             </base-MElement>
+                             <name>ontrolador</name>
+                            </MObject>
+                           </base-MObject>
+                          </MClass>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                     </qlist>
+                    </handles>
+                   </handles>
+                  </children>
+                 </MObject>
+                </base-MObject>
+               </MPackage>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{f192dd0b-2ef0-4c00-bb75-fc3d2a5078b3}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{f192dd0b-2ef0-4c00-bb75-fc3d2a5078b3}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Controlador</name>
+                  <relations>
+                   <handles>
+                    <handles>
+                     <qlist>
+                      <item>
+                       <handle>
+                        <uid>{cd8992b2-20ca-44e7-b465-d5ef5869a56e}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{cd8992b2-20ca-44e7-b465-d5ef5869a56e}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{f192dd0b-2ef0-4c00-bb75-fc3d2a5078b3}</a>
+                             <b>{fc0e8e83-da18-4c47-87e8-30f92d0aaa91}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <cardinality>*</cardinality>
+                             <navigable>true</navigable>
+                             <kind>1</kind>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{1795ab39-ca1f-4bc6-9aec-c126f2528680}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{1795ab39-ca1f-4bc6-9aec-c126f2528680}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{f192dd0b-2ef0-4c00-bb75-fc3d2a5078b3}</a>
+                             <b>{fc0e8e83-da18-4c47-87e8-30f92d0aaa91}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <cardinality>1</cardinality>
+                             <navigable>true</navigable>
+                             <kind>2</kind>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                     </qlist>
+                    </handles>
+                   </handles>
+                  </relations>
+                 </MObject>
+                </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{06cfbb76-3c5c-40c2-9872-ee9079342b84}</uid>
+                    <type>1</type>
+                    <declaration>class Controlador : public QObject</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{387b5970-3131-4219-b0f8-32eb2a8a40db}</uid>
+                    <type>2</type>
+                    <declaration>{    Q_OBJECT public:     explicit Controlador(QObject *parent = nullptr)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{1d891590-fd19-4acb-b4be-7286b65e9957}</uid>
+                    <type>2</type>
+                    <declaration>bool agregarObrero(QString nombre, int horas, TipoJornada jornada)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{2829f2d4-28db-4624-a1b8-a5f0aa318531}</uid>
+                    <type>2</type>
+                    <declaration>bool calcularSalario()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{dc29c4c1-1930-46bc-8586-1872728b89c0}</uid>
+                    <type>2</type>
+                    <properties>4</properties>
+                    <declaration>Obrero *obrero()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{7bede4e8-49c4-4e43-8322-861a5ab07f73}</uid>
+                    <type>2</type>
+                    <declaration>void setObrero(Obrero *newObrero)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{93a9ae96-99d5-4800-9f9a-ed05e946972c}</uid>
+                    <type>1</type>
+                    <declaration>double m_totalBruto</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{f6bfcb2b-c50a-4b84-a5de-4f95efcdd224}</uid>
+                    <type>1</type>
+                    <declaration>double m_totalIESS</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{cb749e08-e573-4425-bcf9-c584e44eb50e}</uid>
+                    <type>1</type>
+                    <declaration>double m_totalNeto</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{6cf5261c-ec2f-4dba-b515-e2c589d92b4e}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>Obrero *m_obrero</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{9f9e87de-b25e-47b1-b3be-3d1eaebf1b89}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>}</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{fc0e8e83-da18-4c47-87e8-30f92d0aaa91}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{fc0e8e83-da18-4c47-87e8-30f92d0aaa91}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Obrero</name>
+                 </MObject>
+                </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{c043c16f-50fd-4c14-8896-6fa75bf41e8c}</uid>
+                    <type>1</type>
+                    <declaration>class Obrero : public QObject</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{577d3d09-0164-4922-b1d0-90cbdfe4b806}</uid>
+                    <type>2</type>
+                    <declaration>{     Q_OBJECT  public:      explicit Obrero(QObject *parent = nullptr)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{04160aa8-b0bc-4979-aee6-397680e6899e}</uid>
+                    <type>2</type>
+                    <declaration>Obrero(const QString &amp;nombre, int horas,TipoJornada jornada)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{f0a9d8a4-9921-4c79-af47-92d2fc44c9af}</uid>
+                    <type>2</type>
+                    <properties>4</properties>
+                    <declaration>const QString &amp;nombre()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{e1b67d2d-290a-4df4-8747-401396c60029}</uid>
+                    <type>2</type>
+                    <declaration>void setNombre(const QString &amp;newNombre)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{c830009d-1a64-4e78-ba2d-508360c1f836}</uid>
+                    <type>2</type>
+                    <properties>4</properties>
+                    <declaration>TipoJornada jornada()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{a0d09991-f8e1-448a-a32a-683ac187c8ad}</uid>
+                    <type>2</type>
+                    <declaration>void setJornada(TipoJornada newJornada)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{2b09db18-ef70-40f3-be7d-d1e2483da0c9}</uid>
+                    <type>2</type>
+                    <properties>4</properties>
+                    <declaration>int horas()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{01635502-ef5e-4ad9-87b1-be01bab33252}</uid>
+                    <type>2</type>
+                    <declaration>void setHoras(int newHoras)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{46d7ee7f-e60d-4137-9d42-964ef55b8c84}</uid>
+                    <type>2</type>
+                    <properties>4</properties>
+                    <declaration>double salarioBruto()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{1af4c94e-a9b0-4503-9ee0-e5e4de592e11}</uid>
+                    <type>2</type>
+                    <declaration>void setSalarioBruto(double newSalarioBruto)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{7df57215-dd3a-4f34-a54d-63563a0cdade}</uid>
+                    <type>2</type>
+                    <properties>4</properties>
+                    <declaration>double salarioNeto()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{df19d1c1-8c16-4d7e-9a09-3bde334c2fc6}</uid>
+                    <type>2</type>
+                    <declaration>void setSalarioNeto(double newSalarioNeto)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{fc6cd7db-fb0f-4e17-8811-a9c1520efa71}</uid>
+                    <type>2</type>
+                    <properties>4</properties>
+                    <declaration>double descuento()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{762a35dd-d65f-48d1-aae3-3ab43beafb59}</uid>
+                    <type>2</type>
+                    <declaration>void setDescuento(double newDescuento)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{41babefa-47b2-4bf5-b44f-b1dc26c387db}</uid>
+                    <type>2</type>
+                    <declaration>QString toString()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{cd1b79f4-ea4f-45b1-83b1-005210af745b}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>QString m_nombre</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{45856984-e814-48ea-a987-8ad0e293e311}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>int m_horas</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{d4a7eb27-5e62-46ea-a11b-9a7561c47d59}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>TipoJornada m_jornada</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{267a464e-a190-458f-878e-63463572eb58}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>double m_salarioBruto</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{387a2394-b29d-41fa-a10f-f63e32a0169f}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>double m_salarioNeto</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{e0c6e702-8200-40c6-bbe7-084bab91f0df}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>double m_descuento</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{7b3979aa-124a-4347-8643-cda727670fc7}</uid>
+                    <visibility>3</visibility>
+                    <type>2</type>
+                    <declaration>QString jornada2String()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{5a3c4af5-b455-4579-b8bb-adf394e742d1}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>}</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{49601cbb-f5b4-44bf-9452-4a165d7d9178}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{49601cbb-f5b4-44bf-9452-4a165d7d9178}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Salarios</name>
+                  <relations>
+                   <handles>
+                    <handles>
+                     <qlist>
+                      <item>
+                       <handle>
+                        <uid>{7664adc7-c10e-4c92-8f3a-5a7709ff2a03}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{7664adc7-c10e-4c92-8f3a-5a7709ff2a03}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{49601cbb-f5b4-44bf-9452-4a165d7d9178}</a>
+                             <b>{f192dd0b-2ef0-4c00-bb75-fc3d2a5078b3}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <navigable>true</navigable>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{fad9a6f1-da16-4f91-8086-2d0a4d1a593d}</uid>
+                        <target>
+                         <instance type="MDependency">
+                          <MDependency>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{fad9a6f1-da16-4f91-8086-2d0a4d1a593d}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{49601cbb-f5b4-44bf-9452-4a165d7d9178}</a>
+                             <b>{fc0e8e83-da18-4c47-87e8-30f92d0aaa91}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MDependency>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                     </qlist>
+                    </handles>
+                   </handles>
+                  </relations>
+                 </MObject>
+                </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{bb26a0b4-f8f4-4083-b42a-4c41759aedb1}</uid>
+                    <type>1</type>
+                    <declaration>class Salarios : public QMainWindow</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{cf38b606-10aa-46d0-b8f0-c76c4a795e8e}</uid>
+                    <type>2</type>
+                    <declaration>{     Q_OBJECT  public:     Salarios(QWidget *parent = nullptr)</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{d7a34135-9ae4-4332-83da-60d6edd5ec25}</uid>
+                    <type>2</type>
+                    <declaration>~Salarios()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{3f5623a2-f67a-446b-ba89-318a869af838}</uid>
+                    <type>2</type>
+                    <declaration>void limpiar()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{e961cc63-4bfa-4a70-8e9f-b4da986a768a}</uid>
+                    <type>2</type>
+                    <declaration>void calcular()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{acbf61c9-1d42-4dfe-af24-9973a4157996}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void on_cmdCalcular_clicked()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{534f16ed-3edd-4817-be3e-9c0461d9fc7a}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void on_actionNuevo_triggered()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{4ad5d877-0b43-4cf3-aca8-b69cae90f7ce}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void on_actioncalcular_triggered()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{8cfa03e6-659a-487b-99db-aee5241bcc46}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void guardar()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{bef77b88-7d68-4041-9a8d-ebe2e968d52a}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void on_actionGuardar_triggered()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{e52824e9-d132-4f0b-8515-ff43449335ec}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void abrir()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{46a7cff2-90cf-4d83-afd0-007c1b475677}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void on_actionAbrir_triggered()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{513b05a6-b536-4d28-a12f-b2cd5dc7c76f}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void on_actionAcerca_de_Salarios_triggered()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{ee050304-f625-43cc-85c7-c084d607462f}</uid>
+                    <visibility>5</visibility>
+                    <type>2</type>
+                    <declaration>void on_actionSalir_triggered()</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{314a38c8-c85d-4310-8d94-991e46300b29}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>Ui::Salarios *ui</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{c986029a-2f4e-42cf-a93d-688d12e4f3d1}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>Controlador *m_controlador</declaration>
+                   </MClassMember>
+                  </item>
+                  <item>
+                   <MClassMember>
+                    <uid>{8a295e22-240b-468c-b7b1-3451a33769a6}</uid>
+                    <visibility>3</visibility>
+                    <type>1</type>
+                    <declaration>}</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{03d6023a-74d8-4866-83c1-498858ee2852}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{03d6023a-74d8-4866-83c1-498858ee2852}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Class</name>
+                  <relations>
+                   <handles>
+                    <handles>
+                     <qlist>
+                      <item>
+                       <handle>
+                        <uid>{8967db0c-de47-4f4a-a5cd-e64dfd02df93}</uid>
+                        <target>
+                         <instance type="MDependency">
+                          <MDependency>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{8967db0c-de47-4f4a-a5cd-e64dfd02df93}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{03d6023a-74d8-4866-83c1-498858ee2852}</a>
+                             <b>{49601cbb-f5b4-44bf-9452-4a165d7d9178}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MDependency>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                     </qlist>
+                    </handles>
+                   </handles>
+                  </relations>
+                 </MObject>
+                </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{82828b1e-6866-489a-a9d3-d147bb34a071}</uid>
+                    <type>1</type>
+                    <declaration>Main</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
+               </MClass>
               </instance>
              </target>
             </handle>

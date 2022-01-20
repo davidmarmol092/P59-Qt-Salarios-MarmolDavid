@@ -46,15 +46,15 @@ bool Controlador::calcularSalario()
 
       double descuento = salarioBruto * IESS / 100;
 
-      // Calculo del salario neto
+
       double salarioNeto = salarioBruto - descuento;
 
-      // Establecer valores al objeto
+
       m_obrero->setSalarioBruto(salarioBruto);
       m_obrero->setDescuento(descuento);
       m_obrero->setSalarioNeto(salarioNeto);
 
-      // Retirnar true (todo se calculo correctamente)
+
       m_totalBruto+=salarioBruto;
       m_totalIESS+=descuento;
       m_totalNeto+=salarioNeto;

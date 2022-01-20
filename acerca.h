@@ -7,6 +7,8 @@ namespace Ui {
 class Acerca;
 }
 
+
+//Esta ventana es para obtener la vizualicacion del boton acerca de, el cual nos permite conocer mas de la app
 class Acerca : public QDialog
 {
     Q_OBJECT

@@ -14,8 +14,8 @@
    <string>Salarios</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>:/Recursos/gestion-de-proyectos.png</normaloff>:/Recursos/gestion-de-proyectos.png</iconset>
+   <iconset resource="Recursos-Salario.qrc">
+    <normaloff>:/new/prefix1/Recursos/salario.png</normaloff>:/new/prefix1/Recursos/salario.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -283,6 +283,8 @@
                <property name="font">
                 <font>
                  <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
                 </font>
                </property>
                <property name="text">
@@ -502,6 +504,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Recursos-Salario.qrc"/>
+ </resources>
  <connections/>
 </ui>

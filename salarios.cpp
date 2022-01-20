@@ -25,19 +25,19 @@ void Salarios::limpiar()
 void Salarios::calcular()
 {
     if(ui->inNombre->text()==""){
-        ui->statusbar->showMessage("INGRESE UN NOMBRE VALIDO PORFAVOR!",3500);
+        ui->statusbar->showMessage("Ingrese un nombre valido porfavor!",3500);
 
-        QMessageBox::warning(this,"NOMBRE","EL NOMBRE ES INVALIDO");
+        QMessageBox::warning(this,"Nombre","Este nombre es invalido");
         return;
     }
     else if((ui->inMatutina->isChecked()==false&&ui->inNocturna->isChecked()==false&&ui->inVespertina->isChecked()==false)){
-        ui->statusbar->showMessage("SE NECESITA SABER LA JORNADA DEL TRABAJADOR",3500);
-        QMessageBox::warning(this,"JORNADA","ES NECESARIO ESCOGER LA JORNADA DEL TRABAJADOR");
+        ui->statusbar->showMessage("Se necesita conocer la jornada del trabajador",3500);
+        QMessageBox::warning(this,"Jornada","Es necesario elegir la jornada del trabajador");
         return;
     }
     else if(ui->inHoras->value()==0){
-        ui->statusbar->showMessage("EL NUMERO DE HORAS NO PUEDE SER 0",3500);
-        QMessageBox::warning(this,"HORAS","EL NUMERO DE HORAS NO PUEDE SER 0");
+        ui->statusbar->showMessage("El numero de horas esta vacio, no puede ser cero",3500);
+        QMessageBox::warning(this,"Horas","El numero de horas no puede ser cero");
         return;
     }
 
@@ -100,12 +100,12 @@ void Salarios::on_actioncalcular_triggered()
 
 void Salarios::guardar()
 {
-    //abrir cuadro de dialogo para seleccionar ubicacion y nombre del archivo
+
     QString nombreArchivo = QFileDialog::getSaveFileName(this,"Guardar datos",QDir::home().absolutePath(),"Archivo de salarios .slr (*.slr)");
-    //crear un objeto QFile
+
 
     QFile archivo(nombreArchivo);
-    //abrir para escritura
+
     if(archivo.open(QFile::WriteOnly|QFile::Truncate)){
         QTextStream salida(&archivo);
         salida<<ui->outResultado->toPlainText();
@@ -132,7 +132,7 @@ void Salarios::on_actionGuardar_triggered()
 
 void Salarios::abrir()
 {
-    //abrir cuadro de dialogo para seleccionar ubicacion y nombre del archivo
+
     QString nombreArchivo = QFileDialog::getOpenFileName(this,"Abrir Archivos",QDir::home().absolutePath(),"Archivo de salarios .slr (*.slr)");
     //crear un objeto QFile
 
@@ -144,15 +144,13 @@ void Salarios::abrir()
         ui->outResultado->clear();
         QString dato="",linea;
 
-        // while(entrada.readLine()!="/////////////"){
-        //definimos limites en la impresion
         while(entrada.atEnd()==false&&linea!="/////////////"){
             linea=entrada.readLine();
             if(linea=="/////////////"){}else{
                 dato+=linea+"\n";
             }
         }
-        //imprimimos los datos en lost  out y settearlos para seguir calculando
+
         ui->outResultado->setPlainText(dato);
         linea=entrada.readLine();
         linea=entrada.readLine();
@@ -190,7 +188,6 @@ void Salarios::on_actionAbrir_triggered()
 void Salarios::on_actionAcerca_de_Salarios_triggered()
 {
     Acerca *dialogo=new Acerca (this);
-    //enviar dato
     dialogo->setVersion(VERSION);
     dialogo->exec();
 
